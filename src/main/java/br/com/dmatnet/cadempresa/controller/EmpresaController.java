@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import br.com.dmatnet.cadempresa.entities.pessoa.PessoaJuridica.AbstractPessoaJuridicaEntity;
+import br.com.dmatnet.cadempresa.model.entities.pessoa.PessoaJuridica.AbstractPessoaJuridicaEntity;
+import br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaTO.AbstractPessoaJuridicaTO;
 import br.com.dmatnet.cadempresa.repository.PessoaJuridicaRepository;
 
 @RestController
@@ -32,7 +33,7 @@ public class EmpresaController {
 	}
 
 	@PostMapping
-	public ResponseEntity<AbstractPessoaJuridicaEntity> criarEmpresa(
+	public ResponseEntity<AbstractPessoaJuridicaTO> criarEmpresa(
 			@RequestBody AbstractPessoaJuridicaEntity empresa) {
 		AbstractPessoaJuridicaEntity empresaCriada = pessoaJuridicaRepository.save(empresa);
 		var uri = ServletUriComponentsBuilder.fromCurrentRequest().path(Long.toString(empresaCriada.getIdPessoa()))
@@ -41,7 +42,7 @@ public class EmpresaController {
 	}
 
 	@PutMapping(path = "/{id}", produces = { "application/json" })
-	public ResponseEntity<AbstractPessoaJuridicaEntity> atualizarEmpresa(@PathVariable("id") long id,
+	public ResponseEntity<AbstractPessoaJuridicaTO> atualizarEmpresa(@PathVariable("id") long id,
 			@RequestBody AbstractPessoaJuridicaEntity empresa) {
 
 		return null;
