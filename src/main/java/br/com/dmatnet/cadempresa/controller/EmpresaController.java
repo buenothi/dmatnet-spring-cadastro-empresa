@@ -39,8 +39,8 @@ public class EmpresaController {
 		
 		return ResponseEntity.ok(pessoaJuridicaRepository
 				.findAll()
-				.stream().map(
-						empresa -> empresaEntities
+				.stream()
+				.map(empresa -> empresaEntities
 						.add(mapper.map(empresa, EmpresaTO.class))));
 	}
 
