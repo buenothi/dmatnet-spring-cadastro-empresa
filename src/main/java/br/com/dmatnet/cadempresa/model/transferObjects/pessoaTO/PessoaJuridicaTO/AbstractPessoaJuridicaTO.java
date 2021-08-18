@@ -2,9 +2,9 @@ package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaT
 
 import java.io.Serializable;
 
-import br.com.dmatnet.cadempresa.model.entities.pessoa.AbstractPessoaEntity;
+import br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.AbstractPessoaTO;
 
-public abstract class AbstractPessoaJuridicaTO extends AbstractPessoaEntity implements Serializable {
+public abstract class AbstractPessoaJuridicaTO extends AbstractPessoaTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
