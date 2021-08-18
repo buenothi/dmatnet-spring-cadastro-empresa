@@ -28,8 +28,7 @@ public class EmpresaController {
 	@Autowired
 	PessoaJuridicaRepository pessoaJuridicaRepository;
 	
-	@Autowired
-	ModelMapper mapper;
+	ModelMapper mapper = new ModelMapper();
 
 	@GetMapping
 	public ResponseEntity<Stream<Object>> listarEmpresas() {
