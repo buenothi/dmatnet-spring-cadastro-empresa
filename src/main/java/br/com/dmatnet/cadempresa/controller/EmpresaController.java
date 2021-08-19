@@ -101,7 +101,11 @@ public class EmpresaController {
 		
 		Optional<EmpresaEntity> empresaToDelete = empresaRepository.findById(id);
 		
-		empresaToDelete.ifPresent((empresa) -> empresaRepository.delete(empresa));
+		if (empresaToDelete.isEmpty()) {
+			return ResponseEntity.notFound().build();
+		}
+					
+		empresaRepository.delete(empresaToDelete.get());
 		
 		return ResponseEntity.ok(null);
 		
