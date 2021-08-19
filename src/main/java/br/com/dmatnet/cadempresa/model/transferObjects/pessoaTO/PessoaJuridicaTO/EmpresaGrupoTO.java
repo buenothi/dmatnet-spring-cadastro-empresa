@@ -3,6 +3,9 @@ package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaT
 import java.io.Serializable;
 import java.util.List;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,6 +22,9 @@ import lombok.ToString;
 public class EmpresaGrupoTO implements Serializable {
 
 	private long idGrupo;
+	
+	@NotNull
+	@Size(min = 3)
 	private String nomeGrupo;
 	private String descricaoGrupo;
 	private List<EmpresaTO> empresas;

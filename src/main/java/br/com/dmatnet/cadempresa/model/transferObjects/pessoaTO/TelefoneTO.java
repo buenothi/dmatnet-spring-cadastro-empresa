@@ -2,6 +2,8 @@ package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotNull;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,6 +20,8 @@ import lombok.ToString;
 public class TelefoneTO implements Serializable, Cloneable, Comparable<TelefoneTO> {
 
 	private long idTelefone;
+	
+	@NotNull
 	private String numeroTelefone;
 	private TelefoneTipoTO tipoTelefone;
 	private static final long serialVersionUID = 1L;

@@ -2,7 +2,7 @@ package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO;
 
 import java.io.Serializable;
 
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Email;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,7 +21,7 @@ public class EmailTO implements Serializable, Cloneable, Comparable<EmailTO> {
 
 	private long idEmail;
 
-	@Pattern(regexp = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$")
+	@Email
 	private String nomeEmail;
 	private boolean isEmailPrincipal;
 	private EmailTipoTO tipoEmail;

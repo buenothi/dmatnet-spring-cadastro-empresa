@@ -2,6 +2,8 @@ package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaT
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotNull;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,8 +21,12 @@ public class FuncaoTO implements Serializable {
 
 	private long id;
 	private Long codFuncaoEsocial; // Código eSocial do Cargo
+	
+	@NotNull
 	private String funcaoNome;
 	private String funcaoDescricao;
+	
+	@NotNull
 	private Long cbo;
 
 	private static final long serialVersionUID = 1L;

@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -18,6 +21,9 @@ import lombok.ToString;
 public abstract class AbstractPessoaTO implements Serializable {
 
 	private long idPessoa;
+	
+	@NotNull
+	@Size(min = 3)
 	private String nome;
 	private Set<EnderecoTO> enderecos;
 	private Set<TelefoneTO> telefones;
