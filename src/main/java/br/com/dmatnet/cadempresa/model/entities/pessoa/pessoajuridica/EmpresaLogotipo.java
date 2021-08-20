@@ -1,14 +1,12 @@
-package br.com.dmatnet.cadempresa.model.entities.pessoa.PessoaJuridica;
+package br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica;
 
 import java.io.Serializable;
-import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -17,22 +15,25 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-@Table(name = "tbl_EmpresaGrupo")
+@Table(name = "tbl_EmpresaLogotipo")
 @Data
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class EmpresaGrupoEntity implements Serializable {
+public class EmpresaLogotipo implements Serializable, Cloneable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idGrupo;
-	private String nomeGrupo;
-	private String descricaoGrupo;
+	private long idEmpresaLogotipo;
 
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "grupo")
-	private List<EmpresaEntity> empresas;
+	@Lob
+	private byte[] logotipo;
 
 	private static final long serialVersionUID = 1L;
+
+	@Override
+	public EmpresaLogotipo clone() throws CloneNotSupportedException {
+		return (EmpresaLogotipo) super.clone();
+	}
 
 }

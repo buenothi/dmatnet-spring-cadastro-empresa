@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import br.com.dmatnet.cadempresa.model.entities.pessoa.PessoaJuridica.FuncaoEntity;
-import br.com.dmatnet.cadempresa.model.entities.pessoa.PessoaJuridica.Setor;
+import br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica.FuncaoEntity;
+import br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica.Setor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

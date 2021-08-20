@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.entities.pessoa.PessoaJuridica;
+package br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica;
 
 import java.io.Serializable;
 import java.util.Date;

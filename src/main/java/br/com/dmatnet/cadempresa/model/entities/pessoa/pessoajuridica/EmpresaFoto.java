@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.entities.pessoa.PessoaJuridica;
+package br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica;
 
 import java.io.Serializable;
 
@@ -15,25 +15,29 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-@Table(name = "tbl_EmpresaLogotipo")
+@Table(name = "tbl_EmpresaFoto")
 @Data
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class EmpresaLogotipo implements Serializable, Cloneable {
+public class EmpresaFoto implements Serializable, Cloneable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idEmpresaLogotipo;
+	private long idEmpresaFoto;
 
 	@Lob
-	private byte[] logotipo;
+	private byte[] fotoFachada;
 
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	public EmpresaLogotipo clone() throws CloneNotSupportedException {
-		return (EmpresaLogotipo) super.clone();
+	public EmpresaFoto clone() throws CloneNotSupportedException {
+		return (EmpresaFoto) super.clone();
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 
 }

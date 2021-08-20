@@ -15,8 +15,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import br.com.dmatnet.cadempresa.model.entities.pessoa.PessoaJuridica.FuncaoEntity;
-import br.com.dmatnet.cadempresa.model.entities.pessoa.PessoaJuridica.Setor;
+import br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica.FuncaoEntity;
+import br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica.Setor;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
