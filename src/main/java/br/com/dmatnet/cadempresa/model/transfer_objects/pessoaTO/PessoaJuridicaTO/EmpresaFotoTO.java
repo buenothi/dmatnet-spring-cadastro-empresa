@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.cidadesTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO.PessoaJuridicaTO;
 
 import java.io.Serializable;
 
@@ -15,11 +15,15 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class CidadeTO implements Serializable {
+public class EmpresaFotoTO implements Serializable, Cloneable {
 
-	private long id;
-	private String cidadeNome;
-	private EstadoTO estado;
+	private long idEmpresaFoto;
+	private byte[] fotoFachada;
 	private static final long serialVersionUID = 1L;
+
+	@Override
+	public EmpresaFotoTO clone() throws CloneNotSupportedException {
+		return (EmpresaFotoTO) super.clone();
+	}
 
 }

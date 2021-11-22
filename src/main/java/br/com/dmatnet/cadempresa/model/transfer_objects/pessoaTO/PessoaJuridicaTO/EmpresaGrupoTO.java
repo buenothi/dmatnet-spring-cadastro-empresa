@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO.PessoaJuridicaTO;
 
 import java.io.Serializable;
 import java.util.List;

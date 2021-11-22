@@ -25,9 +25,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import br.com.dmatnet.cadempresa.model.Converter.EmpresaConverter;
+import br.com.dmatnet.cadempresa.model.converter.EmpresaConverter;
 import br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica.EmpresaEntity;
-import br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaTO.EmpresaTO;
+import br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO.PessoaJuridicaTO.EmpresaTO;
 import br.com.dmatnet.cadempresa.repository.EmpresaRepository;
 
 @RestController

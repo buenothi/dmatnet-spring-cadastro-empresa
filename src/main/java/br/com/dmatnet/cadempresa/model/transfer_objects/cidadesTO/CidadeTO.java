@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.cidadesTO;
 
 import java.io.Serializable;
 
@@ -15,14 +15,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class SetorTO implements Serializable {
+public class CidadeTO implements Serializable {
 
+	private long id;
+	private String cidadeNome;
+	private EstadoTO estado;
 	private static final long serialVersionUID = 1L;
-	private long idSetores;
-	private String setorNome;
-
-	public void setSetorNome(String setorNome) {
-		this.setorNome = setorNome.toUpperCase();
-	}
 
 }

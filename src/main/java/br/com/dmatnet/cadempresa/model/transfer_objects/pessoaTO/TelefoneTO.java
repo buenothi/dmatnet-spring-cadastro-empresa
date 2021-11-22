@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO;
 
 import java.io.Serializable;
 

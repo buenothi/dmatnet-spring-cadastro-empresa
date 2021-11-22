@@ -1,11 +1,11 @@
-package br.com.dmatnet.cadempresa.model.Converter;
+package br.com.dmatnet.cadempresa.model.converter;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import br.com.dmatnet.cadempresa.model.entities.pessoa.pessoajuridica.EmpresaEntity;
-import br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaTO.EmpresaTO;
+import br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO.PessoaJuridicaTO.EmpresaTO;
 
 @Component
 public class EmpresaConverter {

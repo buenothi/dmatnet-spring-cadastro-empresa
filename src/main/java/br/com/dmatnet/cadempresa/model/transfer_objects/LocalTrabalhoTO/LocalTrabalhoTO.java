@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.LocalTrabalhoTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.LocalTrabalhoTO;
 
 import java.io.Serializable;
 import java.util.Date;

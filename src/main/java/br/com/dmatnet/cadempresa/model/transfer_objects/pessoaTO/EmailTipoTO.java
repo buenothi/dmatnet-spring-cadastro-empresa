@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO;
 
 import java.io.Serializable;
 
@@ -15,11 +15,10 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class EnderecoTipoTO implements Serializable {
+public class EmailTipoTO implements Serializable {
 
-	private int idNomeLogradouro;
-	private String siglaLogradouro;
-	private String nomeLogradouro;
+	private long idEmailTipo;
+	private String tipo;
 	private static final long serialVersionUID = 1L;
 
 }

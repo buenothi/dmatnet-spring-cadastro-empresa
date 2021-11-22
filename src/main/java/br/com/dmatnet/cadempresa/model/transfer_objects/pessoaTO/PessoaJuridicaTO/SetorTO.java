@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO.PessoaJuridicaTO;
 
 import java.io.Serializable;
 
@@ -15,15 +15,14 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class EmpresaFotoTO implements Serializable, Cloneable {
+public class SetorTO implements Serializable {
 
-	private long idEmpresaFoto;
-	private byte[] fotoFachada;
 	private static final long serialVersionUID = 1L;
+	private long idSetores;
+	private String setorNome;
 
-	@Override
-	public EmpresaFotoTO clone() throws CloneNotSupportedException {
-		return (EmpresaFotoTO) super.clone();
+	public void setSetorNome(String setorNome) {
+		this.setorNome = setorNome.toUpperCase();
 	}
 
 }

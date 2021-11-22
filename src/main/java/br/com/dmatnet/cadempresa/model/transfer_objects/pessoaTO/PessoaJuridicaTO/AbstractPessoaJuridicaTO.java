@@ -1,8 +1,8 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.PessoaJuridicaTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO.PessoaJuridicaTO;
 
 import java.io.Serializable;
 
-import br.com.dmatnet.cadempresa.model.transferObjects.pessoaTO.AbstractPessoaTO;
+import br.com.dmatnet.cadempresa.model.transfer_objects.pessoaTO.AbstractPessoaTO;
 
 public abstract class AbstractPessoaJuridicaTO extends AbstractPessoaTO implements Serializable {
 

@@ -1,4 +1,4 @@
-package br.com.dmatnet.cadempresa.model.transferObjects.cidadesTO;
+package br.com.dmatnet.cadempresa.model.transfer_objects.cidadesTO;
 
 import java.io.Serializable;
 import java.util.List;
